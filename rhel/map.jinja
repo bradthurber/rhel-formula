@@ -1,0 +1,20 @@
+{# Settings dictionary with default vaules #}
+{% set default_settings = {
+  'rhel': {
+    'sm': {
+      'pools': {
+        'attach': [
+        ]
+      },
+      'register_username': 'redhat',
+      'register_password': 'password',
+      'repos': {
+        'enable': [
+        ]
+      }
+    }
+  }      
+} %}
+
+{# Update settings defaults from pilar data #}
+{% set rhel_settings = salt['pillar.get']('rhel', default=default_settings.rhel, merge=True) %}

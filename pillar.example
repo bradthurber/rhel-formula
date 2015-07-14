@@ -1,0 +1,16 @@
+  'rhel': {
+    'sm': {
+      'pools': {
+        'attach': [
+          '7a85f9814bfa3a50014c2cf00fe23f35'
+        ]
+      },
+      'register_username': 'redhatusername',
+      'register_password': 'veryBadPasswordRH#1',
+      'repos': {
+        'enable': [
+          'jb-eap-6-for-rhel-7-server-rpms'
+        ]
+      }
+    }
+  }  
