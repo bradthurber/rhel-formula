@@ -16,7 +16,7 @@ A salt formula that provides functionality specific to RHEL. Currently this is o
 
 Example usage (in top.sls):
 ===========================
-.. code-block:: yaml
+::
     - rhel.sm_register
     - rhel.sm_attach
     - rhel.sm_repos_enable
