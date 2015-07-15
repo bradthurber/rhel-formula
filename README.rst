@@ -2,7 +2,7 @@
 rhel-formula
 ================
 
-A salt formula that provides functionality specific to RHEL. Currently this is only SubscriptionManager configuration
+A salt formula that provides functionality specific to RHEL. 
 
 .. note::
 
@@ -29,6 +29,12 @@ Available states
 .. contents::
     :local:
 
+``rhel.java_180_oracle``
+------------
+
+Install Oracle flavor of Java 1.8.0 from RHEL subscriber library. Note that this library is usually way behind 
+the latest. An alternative is the sun-java-rpm formula - which will install directly from Oracle servers. 
+	
 ``rhel.sm_register``
 ------------
 
